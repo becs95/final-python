@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Captura de Información</title>
+</head>
+<body>
+    <h1>Formulario de Captura</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Aceptar</button>
+    </form>
+</body>
+</html>
